@@ -1,0 +1,49 @@
+* {
+    margin: 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: #3c5ef5;
+    color: white;
+    height: 10%;
+    width: 100%;
+    font-size: x-large;
+    padding: 3%;
+}
+
+#konsola {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 50%;
+    font-size: xx-large;
+    padding: 1%;
+
+}
+
+
+#MOV_Section {
+    height: 35%;
+    width: 100%;
+    background-color: #cdced4;
+    padding: 3px;
+}
+
+
+
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+    background-color: rgb(29, 29, 28);
+    color: white;
+    padding: 2%;
+
+
+
+}
+
+/* To Do: Polepszyć CSS */
