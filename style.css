@@ -12,13 +12,38 @@ header {
     padding: 3%;
 }
 
+
 #konsola {
     background-color: #f5f5f5;
     width: 100%;
     height: 50%;
     font-size: xx-large;
     padding: 1%;
+    
 
+}
+
+#konsola a{
+    color:#5789d3;
+    text-shadow: gray 1px 1px 1px ;
+}
+#konsola a:hover{
+    color:#f8ae4d;
+    text-shadow:#096581 1px 1px 1px ;
+}
+
+#konsola input[type=text]{
+color:#3cadcf;
+font-size: xx-large;
+width: 200px;
+}
+#konsola input[type=button]{
+    color:#83858d;
+    font-size: xx-large;
+    }
+
+.reset_button{
+    height: 200px;
 }
 
 
@@ -27,6 +52,22 @@ header {
     width: 100%;
     background-color: #cdced4;
     padding: 3px;
+    border: dashed 2px orange;
+}
+
+#MOV_Section h2{
+    color:white;
+    text-shadow: orange 2px 2px;
+}
+
+#MOV_Section input{
+    text-align: center;
+        font-size: 18px;
+        padding: 15px;
+        width: 150px;
+        transition: all 0.5s;
+        color: orange;
+
 }
 
 
