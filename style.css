@@ -1,13 +1,19 @@
-* {
+body {
     margin: 0 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+    width: 90%;
+    min-width: min-content;
+    margin:0 auto;
+    display:flexbox;
 }
 
 header {
     background-color: #3c5ef5;
     color: white;
-    height: 10%;
-    width: 100%;
+   
     font-size: x-large;
     padding: 3%;
 }
@@ -15,10 +21,13 @@ header {
 
 #konsola {
     background-color: #f5f5f5;
-    width: 100%;
-    height: 50%;
+    
     font-size: xx-large;
-    padding: 1%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:  350px;
+    
     
 
 }
@@ -47,17 +56,25 @@ width: 200px;
 }
 
 
-#MOV_Section {
-    height: 35%;
-    width: 100%;
+
+#MOV_Section{
+    min-height: 300px;
     background-color: #cdced4;
     padding: 3px;
     border: dashed 2px orange;
+    display:flex;
+    justify-content: center;
+    align-items: center
+    
+    
+    
 }
 
 #MOV_Section h2{
     color:white;
     text-shadow: orange 2px 2px;
+    
+
 }
 
 #MOV_Section input{
@@ -67,6 +84,10 @@ width: 200px;
         width: 150px;
         transition: all 0.5s;
         color: orange;
+        
+        
+        
+        
 
 }
 
@@ -75,10 +96,6 @@ width: 200px;
 
 footer {
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    height: 5%;
-    width: 100%;
     background-color: rgb(29, 29, 28);
     color: white;
     padding: 2%;
