@@ -137,3 +137,83 @@ function mov_bx_ax() {
                                             var DX = document.getElementById("DX").value;
                                             document.getElementById("CX").value = DX;
                                             }
+
+//Instruction XCHG//
+    ////First ROW/////
+    function xchg_ax_bx() {
+       var AX = document.getElementById("AX").value;
+        var BX = document.getElementById("BX").value;
+        document.getElementById("AX").value = BX;
+        document.getElementById("BX").value = AX;
+        
+        }
+    function xchg_bx_ax() {
+        var AX = document.getElementById("AX").value;
+        var BX = document.getElementById("BX").value;
+        document.getElementById("BX").value = AX;
+        document.getElementById("AX").value = BX;
+        }
+        function xchg_cx_ax() {
+            var AX = document.getElementById("AX").value;
+        var CX = document.getElementById("CX").value;
+        document.getElementById("AX").value = CX;
+        document.getElementById("CX").value = AX;
+            }
+            function xchg_dx_ax() {
+                var AX = document.getElementById("AX").value;
+                var DX = document.getElementById("DX").value;
+                document.getElementById("AX").value = DX;
+                document.getElementById("DX").value = AX;
+                }
+                ////Second ROW/////
+                function xchg_ax_cx() {
+                    var AX = document.getElementById("AX").value;
+        var CX = document.getElementById("CX").value;
+        document.getElementById("AX").value = CX;
+        document.getElementById("CX").value = AX;
+                    }
+                    function xchg_bx_cx() {
+                        var CX = document.getElementById("CX").value;
+        var BX = document.getElementById("BX").value;
+        document.getElementById("CX").value = BX;
+        document.getElementById("BX").value = CX;
+                        }
+                        function xchg_cx_bx() {
+                            var CX = document.getElementById("CX").value;
+        var BX = document.getElementById("BX").value;
+        document.getElementById("CX").value = BX;
+        document.getElementById("BX").value = CX;
+                            }
+                            function xchg_dx_bx() {
+                                var DX = document.getElementById("DX").value;
+        var BX = document.getElementById("BX").value;
+        document.getElementById("DX").value = BX;
+        document.getElementById("BX").value = DX;
+                                }
+                                 ////Third ROW/////
+                                function xchg_ax_dx() {
+                                    var AX = document.getElementById("AX").value;
+                                    var DX = document.getElementById("DX").value;
+                                    document.getElementById("AX").value = DX;
+                                    document.getElementById("DX").value = AX;
+                                    }
+                                    function xchg_bx_dx() {
+                                        var BX = document.getElementById("BX").value;
+        var DX = document.getElementById("DX").value;
+        document.getElementById("BX").value = DX;
+        document.getElementById("DX").value = BX;
+                                        }
+                                        function xchg_cx_dx() {
+                                            var CX = document.getElementById("CX").value;
+        var DX = document.getElementById("DX").value;
+        document.getElementById("CX").value = DX;
+        document.getElementById("DX").value = CX;
+                                            }
+                                            function xchg_dx_cx() {
+                                                var DX = document.getElementById("DX").value;
+        var CX = document.getElementById("CX").value;
+        document.getElementById("DX").value = CX;
+        document.getElementById("CX").value = DX;
+                                                }
+    
+    

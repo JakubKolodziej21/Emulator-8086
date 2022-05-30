@@ -1,17 +1,33 @@
+@media all{
+   .aside{ flex: 1 auto;} 
+   
+}
+
+
+
 body {
     margin: 0 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
 }
 
 main{
     width: 90%;
     min-width: min-content;
     margin:0 auto;
-    display:flexbox;
+    display:flex;
+    flex-flow: row wrap;
+
+}
+
+main > * {
+    flex: 1 100%;
 }
 
 header {
-    background-color: #3c5ef5;
+    background: rgb(63,94,251);
+background: linear-gradient(203deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     color: white;
    
     font-size: x-large;
@@ -20,8 +36,8 @@ header {
 
 
 #konsola {
-    background-color: #f5f5f5;
-    
+    background-color: rgba(255,255,255,0.6);
+       
     font-size: xx-large;
     display:flex;
     justify-content: center;
@@ -61,18 +77,18 @@ width: 200px;
     min-height: 300px;
     background-color: #cdced4;
     padding: 3px;
-    border: dashed 2px orange;
+    border: dashed 2px rgba(63,94,251,1);
     display:flex;
     justify-content: center;
-    align-items: center
-    
+    align-items: center;
+    min-width:50%;
     
     
 }
 
 #MOV_Section h2{
     color:white;
-    text-shadow: orange 2px 2px;
+    text-shadow:rgba(63,94,251,1) 2px 2px;
     
 
 }
@@ -83,13 +99,49 @@ width: 200px;
         padding: 15px;
         width: 150px;
         transition: all 0.5s;
-        color: orange;
+        color: rgba(63,94,251,1);
         
         
         
         
 
 }
+#XCHG_Section{
+    min-height: 300px;
+    background-color: #cdced4;
+    padding: 3px;
+    border: dashed 2px rgba(252,70,107,1);
+    border-top: dashed 2px rgb(255, 0, 234);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+#XCHG_Section h2{
+    color:white;
+    text-shadow: rgba(252,70,107,1) 2px 2px;
+    
+
+}
+
+#XCHG_Section input{
+    text-align: center;
+        font-size: 18px;
+        padding: 15px;
+        width: 150px;
+        transition: all 0.5s;
+        color: rgba(252,70,107,1);
+        
+        
+        
+        
+
+}
+
+
 
 
 
@@ -104,4 +156,3 @@ footer {
 
 }
 
-/* To Do: Polepszyć CSS */

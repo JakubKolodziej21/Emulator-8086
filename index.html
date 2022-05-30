@@ -9,11 +9,12 @@
     <title>Emulator 8086</title>
     <link rel="stylesheet" href="style.css">
     <script src="myScript.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
     <main>
-    <header>Symulator Procesora Intel 8086</header>
+    <header><img src="microchip.png" width="17em"> Symulator Procesora Intel 8086</header>
 
     <div id="konsola">
         <form id="console">
@@ -51,7 +52,7 @@
     </div>
     </form>
     
-    <div id="MOV_Section">
+    <div id="MOV_Section" class="aside">
         <h2>Polecenie MOVE</h2>
 <table>
     <tr>
@@ -86,10 +87,52 @@
 
     
 </table>
+</div>
+
+<div id="XCHG_Section" class="aside">
+    <h2>Polecenie XCHG</h2>
+<table>
+<tr>
+    <td><input type="button" value="XCHG AX, BX"onclick="xchg_ax_bx()" </td>
+
+    <td><input type="button" value="XCHG BX, AX"onclick="xchg_bx_ax()" </td>
+
+    <td><input type="button" value="XCHG CX, AX"onclick="xchg_cx_ax()" </td>
+
+    <td><input type="button" value="XCHG DX, AX"onclick="xchg_dx_ax()" </td>
+</tr>
+
+<tr>
+    <td><input type="button" value="XCHG AX, CX"onclick="xchg_ax_cx()" </td>
+
+    <td><input type="button" value="XCHG BX, CX"onclick="xchg_bx_cx()" </td>
+
+    <td><input type="button" value="XCHG CX, BX"onclick="xchg_cx_bx()" </td>
+
+    <td><input type="button" value="XCHG DX, BX"onclick="xchg_dx_bx()" </td>
+</tr>
+
+<tr>
+    <td><input type="button" value="XCHG AX, DX"onclick="xchg_ax_dx()" </td>
+
+    <td><input type="button" value="XCHG BX, DX"onclick="xchg_bx_dx()" </td>
+
+    <td><input type="button" value="XCHG CX, DX"onclick="xchg_cx_dx()" </td>
+
+    <td><input type="button" value="XCHG DX, CX"onclick="xchg_dx_cx()" </td>
+</tr>
+
+
+</table>
 
 
 
-    </div>
+</div>
+
+
+
+
+
 
     <footer>
         <a>Projekt Wykonał: Jakub Kołodziej | nr. indeksu 14128</a>
