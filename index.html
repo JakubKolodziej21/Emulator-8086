@@ -14,130 +14,78 @@
 
 <body>
     <main>
-    <header><img src="microchip.png" width="17em"> Symulator Procesora Intel 8086</header>
+        <header><img src="microchip.png" width="17em"> Symulator Procesora Intel 8086</header>
 
-    <div id="konsola">
-        <form id="console">
+        <div id="konsola">
+            <form id="console">
+                <table>
+                    <tr>
+                        <td>
+                            <a>AX</a>
+                            <input type="text" id="AX">
+                            <input type="button" value="RESET" onclick="Reset_AX()">
+                        </td>
+                        <td rowspan="4"><input class="reset_button" type="button" value="RESET ALL" onclick="Reset()">
+                        </td>
+                    </tr>
+                    <td>
+                        <a>BX</a>
+                        <input type="text" id="BX">
+                        <input type="button" value="RESET" onclick="Reset_BX()">
+                    </td>
+                    <tr>
+                        <td>
+                            <a>CX</a>
+                            <input type="text" id="CX">
+                            <input type="button" value="RESET" onclick="Reset_CX()"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <a>DX</a>
+                            <input type="text" id="DX">
+                            <input type="button" value="RESET" onclick="Reset_DX()"></td>
+                    </tr>
+                </table>
+        </div>
+        </form>
+
+        <div id="MOV_Section" class="aside">
+            <h2>Polecenie MOVE</h2>
             <table>
                 <tr>
-                    <td>
-                        <a>AX</a>
-                        <input type="text" id="AX">
-                        <input type="button" value="RESET" onclick="Reset_AX()">
-                    </td>
-                    <td rowspan="4"><input class="reset_button" type="button" value="RESET ALL" onclick="Reset()"></td>
-                </tr>
-                <td>
-                    <a>BX</a>
-                    <input type="text" id="BX">
-                    <input type="button" value="RESET" onclick="Reset_BX()">
-                </td>
-                <tr>
-                    <td>
-                        <a>CX</a>
-                        <input type="text" id="CX">
-                        <input type="button" value="RESET"
-                        onclick="Reset_CX()"></td>
-                </tr>
-
-
-                <tr>
-                    <td>
-                        <a>DX</a>
-                        <input type="text" id="DX">
-                        <input type="button" value="RESET"
-                        onclick="Reset_DX()"></td>
-                </tr>
-            </table>
-    </div>
-    </form>
-    
-    <div id="MOV_Section" class="aside">
-        <h2>Polecenie MOVE</h2>
-<table>
-    <tr>
-        <td><input type="button" value="MOV AX, BX"onclick="mov_ax_bx()" </td>
-
-        <td><input type="button" value="MOV BX, AX"onclick="mov_bx_ax()" </td>
-
-        <td><input type="button" value="MOV CX, AX"onclick="mov_cx_ax()" </td>
-
-        <td><input type="button" value="MOV DX, AX"onclick="mov_dx_ax()" </td>
-    </tr>
-
-    <tr>
-        <td><input type="button" value="MOV AX, CX"onclick="mov_ax_cx()" </td>
-
-        <td><input type="button" value="MOV BX, CX"onclick="mov_bx_cx()" </td>
-
-        <td><input type="button" value="MOV CX, BX"onclick="mov_cx_bx()" </td>
-
-        <td><input type="button" value="MOV DX, BX"onclick="mov_dx_bx()" </td>
-    </tr>
-
-    <tr>
-        <td><input type="button" value="MOV AX, DX"onclick="mov_ax_dx()" </td>
-
-        <td><input type="button" value="MOV BX, DX"onclick="mov_bx_dx()" </td>
-
-        <td><input type="button" value="MOV CX, DX"onclick="mov_cx_dx()" </td>
-
-        <td><input type="button" value="MOV DX, CX"onclick="mov_dx_cx()" </td>
-    </tr>
-
-    
-</table>
-</div>
-
-<div id="XCHG_Section" class="aside">
-    <h2>Polecenie XCHG</h2>
-<table>
-<tr>
-    <td><input type="button" value="XCHG AX, BX"onclick="xchg_ax_bx()" </td>
-
-    <td><input type="button" value="XCHG BX, AX"onclick="xchg_bx_ax()" </td>
-
-    <td><input type="button" value="XCHG CX, AX"onclick="xchg_cx_ax()" </td>
-
-    <td><input type="button" value="XCHG DX, AX"onclick="xchg_dx_ax()" </td>
-</tr>
-
-<tr>
-    <td><input type="button" value="XCHG AX, CX"onclick="xchg_ax_cx()" </td>
-
-    <td><input type="button" value="XCHG BX, CX"onclick="xchg_bx_cx()" </td>
-
-    <td><input type="button" value="XCHG CX, BX"onclick="xchg_cx_bx()" </td>
-
-    <td><input type="button" value="XCHG DX, BX"onclick="xchg_dx_bx()" </td>
-</tr>
-
-<tr>
-    <td><input type="button" value="XCHG AX, DX"onclick="xchg_ax_dx()" </td>
-
-    <td><input type="button" value="XCHG BX, DX"onclick="xchg_bx_dx()" </td>
-
-    <td><input type="button" value="XCHG CX, DX"onclick="xchg_cx_dx()" </td>
-
-    <td><input type="button" value="XCHG DX, CX"onclick="xchg_dx_cx()" </td>
-</tr>
-
-
-</table>
-
-
-
-</div>
-
-
-
-
-
-
-    <footer>
-        <a>Projekt Wykonał: Jakub Kołodziej | nr. indeksu 14128</a>
-    </footer>
-</main>
+                    <td><input type="button" value="MOV AX, BX" onclick="mov_ax_bx()" </td> <td><input type="button"
+                            value="MOV BX, AX" onclick="mov_bx_ax()" </td> <td><input type="button" value="MOV CX, AX"
+                            onclick="mov_cx_ax()" </td> <td><input type="button" value="MOV DX, AX"
+                            onclick="mov_dx_ax()" </td> </tr> <tr>
+                    <td><input type="button" value="MOV AX, CX" onclick="mov_ax_cx()" </td> <td><input type="button"
+                            value="MOV BX, CX" onclick="mov_bx_cx()" </td> <td><input type="button" value="MOV CX, BX"
+                            onclick="mov_cx_bx()" </td> <td><input type="button" value="MOV DX, BX"
+                            onclick="mov_dx_bx()" </td> </tr> <tr>
+                    <td><input type="button" value="MOV AX, DX" onclick="mov_ax_dx()" </td> <td><input type="button"
+                            value="MOV BX, DX" onclick="mov_bx_dx()" </td> <td><input type="button" value="MOV CX, DX"
+                            onclick="mov_cx_dx()" </td> <td><input type="button" value="MOV DX, CX"
+                            onclick="mov_dx_cx()" </td> </tr> </table> </div> <div id="XCHG_Section" class="aside">
+                        <h2>Polecenie XCHG</h2>
+                        <table>
+                            <tr>
+                                <td><input type="button" value="XCHG AX, BX" onclick="xchg_ax_bx()" </td> <td><input
+                                        type="button" value="XCHG BX, AX" onclick="xchg_bx_ax()" </td> <td><input
+                                        type="button" value="XCHG CX, AX" onclick="xchg_cx_ax()" </td> <td><input
+                                        type="button" value="XCHG DX, AX" onclick="xchg_dx_ax()" </td> </tr> <tr>
+                                <td><input type="button" value="XCHG AX, CX" onclick="xchg_ax_cx()" </td> <td><input
+                                        type="button" value="XCHG BX, CX" onclick="xchg_bx_cx()" </td> <td><input
+                                        type="button" value="XCHG CX, BX" onclick="xchg_cx_bx()" </td> <td><input
+                                        type="button" value="XCHG DX, BX" onclick="xchg_dx_bx()" </td> </tr> <tr>
+                                <td><input type="button" value="XCHG AX, DX" onclick="xchg_ax_dx()" </td> <td><input
+                                        type="button" value="XCHG BX, DX" onclick="xchg_bx_dx()" </td> <td><input
+                                        type="button" value="XCHG CX, DX" onclick="xchg_cx_dx()" </td> <td><input
+                                        type="button" value="XCHG DX, CX" onclick="xchg_dx_cx()" </td> </tr> </table>
+                                        </div> <footer>
+                                    <a>Projekt Wykonał: Jakub Kołodziej | nr. indeksu 14128</a>
+                                    </footer>
+    </main>
 </body>
 
 </html>
